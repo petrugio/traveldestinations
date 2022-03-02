@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Capriola;
+    font-weight: 300;
+    color: #3a3a3a;
+}   
+
+#logo {
+    width: 10vh;
+    margin-left: 0.5rem;
+}
+
 footer {
     height: 150px;
 }
