@@ -290,28 +290,35 @@ img:hover {
     background-color: rgb(99, 116, 192);
     transform: scale(1.05);
   }
-  
-/*footer*/
-footer {
-    height: 150px;
-}
 
-body>footer {
-    position: sticky;
-    top: 100vh;
+/*footer*/
+
+footer {
+  background-color: rgb(99, 116, 192);
 }
 
 .social-networks {
-    text-align: center;
+  text-align: center;
 }
 
-.social-networks>li {
-    display: inline;
+.social-networks > li {
+  display: inline;
 }
 
 .social-networks i {
-    font-size: 160%;
-    margin: 1%;
-    padding: 5%;
-    color: #3a3a3a;
+  font-size: 170%;
+  margin: 0.9%;
+  padding: 1%;
+  color: #fff;
+}
+
+.social-networks a :hover {
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 80%;
+  color: rgb(0, 0, 0);
+  padding-bottom: 0.8%;
+  text-align: center;
 }
