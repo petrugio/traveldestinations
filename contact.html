@@ -102,7 +102,7 @@
       </nav>
     </header>
     <h1>Contact us</h1>
-
+    <div class="contact_content_container">
     <div class="map_contact">
         <iframe
           title="Travel destinations Ashbourne"
@@ -141,7 +141,108 @@
           </ul>
         </div>
       </div>
+      <div class="form_container">
+        <form method="GET" action="thanks.html" class="signup_form">
+          <h2>
+            Tell us where you want to go!<i
+              class="fa-solid fa-umbrella-beach"
+            ></i>
+          </h2>
+          <label for="fname">First Name:</label><br />
+          <input
+            placeholder="Enter your first name"
+            class="text-input"
+            id="fname"
+            name="first_name"
+            type="text"
+            required
+          /><br />
 
+          <label for="lname">Last Name:</label><br />
+          <input
+            placeholder="Enter your last name"
+            class="text-input"
+            id="lname"
+            name="last_name"
+            type="text"
+            required
+          /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input
+            placeholder="Enter your email"
+            class="text-input"
+            type="email"
+            id="email"
+            name="email_address"
+            required
+          /><br />
+          <fieldset>
+            <legend>
+              Destination of interest (you can choose more than one):
+            </legend>
+            <label
+              ><input
+                name="prefer"
+                value="italy"
+                type="checkbox"
+                class="input_checkbox"
+              />Italy</label
+            ><br />
+            <label
+              ><input
+                name="prefer"
+                value="spain"
+                type="checkbox"
+                class="input_checkbox"
+              />Spain</label
+            ><br />
+            <label
+              ><input
+                name="prefer"
+                value="portugal"
+                type="checkbox"
+                class="input_checkbox"
+              />Portugal</label
+            ><br />
+            <label
+              ><input
+                name="prefer"
+                value="greece"
+                type="checkbox"
+                class="input_checkbox"
+              />Greece</label
+            ><br />
+            <label
+              ><input
+                name="prefer"
+                value="turkey"
+                type="checkbox"
+                class="input_checkbox"
+              />Turkey</label
+            ><br />
+            <label
+              ><input
+                name="prefer"
+                value="croatia"
+                type="checkbox"
+                class="input_checkbox"
+              />Croatia</label
+            >
+          </fieldset>
+          <br />
+          <label for="message">Send us a message:</label>
+          <br />
+          <textarea
+            placeholder="Please enter your queries here"
+            id="message"
+            name="message"
+          ></textarea
+          ><br />
+          <input class="join-button" type="submit" value="Send" />
+        </form>
+      </div>
+    </div> 
     <footer class="contact_footer">
         <ul class="social-networks">
           <li>
