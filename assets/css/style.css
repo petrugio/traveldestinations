@@ -267,6 +267,30 @@ video {
     border-radius: 6px;
 }
 
+img:hover {
+    transform: scale(1.01);
+  }
+  
+  .countries_button {
+    width: 13rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 120%;
+    padding: 10px;
+    margin-top: 1rem;
+    background-color: rgb(62, 90, 214);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .countries_button:hover {
+    background-color: rgb(99, 116, 192);
+    transform: scale(1.05);
+  }
+  
 /*footer*/
 footer {
     height: 150px;
