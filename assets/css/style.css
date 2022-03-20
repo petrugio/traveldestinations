@@ -171,6 +171,22 @@ header {
     padding: 0.5rem;
   }
 
+  .contact_details ul,
+.contact_details_adr ul {
+  list-style-type: none;
+  padding: 2%;
+  margin-top: 0.5rem;
+  background-color: rgb(99, 116, 192, 0.9);
+  border-radius: 4px;
+}
+
+.contact_details ul a,
+.contact_details_adr ul a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 /*hero video*/
 
 .video-container {
