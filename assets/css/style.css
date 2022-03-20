@@ -352,7 +352,7 @@ iframe {
 /*contact us page*/
 
 .contact_body {
-    background: url("/assets/images/poster_big.webp") center center fixed;
+    background: url("assets/images/poster_big.webp") center center fixed;
     background-size: cover;
 }
 
@@ -539,7 +539,7 @@ label,
       font-size: 1.1rem;
     }
   }
-  
+
   @media (max-width: 488px) {
     .countries_container {
       display: flex;
@@ -550,7 +550,7 @@ label,
       display: none;
     }
     body {
-      background: url("/assets/images/poster.webp") center center fixed;
+      background: url("assets/images/poster.webp") center center fixed;
       background-size: cover;
     }
     iframe {
