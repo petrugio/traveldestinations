@@ -15,6 +15,128 @@ body {
 
 /*logo*/
 
+/*nav menu - adapted for this project from..*/
+/*https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/*/
+
+.dropdown__title {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+  }
+  nav {
+    background-color: rgb(62, 90, 214);
+    position: sticky;
+    border-radius: 4px;
+  }
+  
+  .dropdown .dropdown__menu a {
+    display: block;
+    padding: 0.5em;
+    opacity: 0;
+    transition: 50ms all 50ms ease-out;
+  }
+  
+  .dropdown:hover .dropdown__menu,
+  .dropdown:focus-within .dropdown__menu {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+  }
+  .dropdown:hover .dropdown__menu a,
+  .dropdown:focus-within .dropdown__menu a {
+    opacity: 1;
+  }
+  .dropdown:hover:after,
+  .dropdown:focus-within:after {
+    opacity: 1;
+  }
+  
+  nav > ul {
+    grid-auto-flow: column;
+    white-space: nowrap;
+  }
+  
+  nav > ul > li a,
+  nav > ul > li .dropdown__title {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  nav > ul > li > a,
+  nav > ul > li .dropdown__title {
+    padding: 0.5rem 0.5rem;
+    border-top: 3px solid transparent;
+    transition: 50ms all 50ms ease-out;
+  }
+  nav > ul > li > a:hover,
+  nav > ul > li .dropdown__title:hover,
+  nav > ul > li > a:focus,
+  nav > ul > li .dropdown__title:focus {
+    border-top-color: rgb(230, 204, 204);
+    color: rgb(230, 204, 204);
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  
+  .dropdown .dropdown__title:after {
+    content: "";
+    border: 0.35rem solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.45);
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+  }
+  .dropdown .dropdown__menu {
+    position: absolute;
+    min-width: 15ch;
+    left: 42%;
+    top: calc(100% + 0.08rem);
+    transition: 50ms all 50ms ease-out;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    visibility: hidden;
+  
+    padding: 0.5em 0;
+    background-color: rgb(62, 90, 214);
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  }
+  .dropdown .dropdown__menu a {
+    color: #fff;
+    opacity: 0;
+    transition: 50ms all 50ms ease-out;
+  }
+  .dropdown .dropdown__menu a:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: rgb(230, 204, 204);
+  }
+  .dropdown .dropdown__menu a:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .dropdown:after {
+    content: "";
+    border: 0.5rem solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: calc(100% - 0.9rem);
+    left: 61.5%;
+    transform: translateX(-50%);
+    transition: 50ms all 50ms ease-out;
+    opacity: 0;
+    will-change: opacity;
+  }
+  .dropdown:hover .dropdown__title,
+  .dropdown:focus-within {
+    border-top-color: rgb(230, 204, 204);
+  }
+
 #logo {
     width: 9rem;
     height: 9rem;
