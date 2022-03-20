@@ -322,3 +322,29 @@ footer p {
   padding-bottom: 0.8%;
   text-align: center;
 }
+
+/*countries pages*/
+
+.country_description {
+    padding: 2rem;
+    color: #fff;
+    background-color: rgb(99, 116, 192, 0.85);
+  }
+  
+  .countries_page_container {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .countries_page img {
+    width: 30rem;
+    height: 30rem;
+  }
+  
+  iframe {
+    width: 53.3rem;
+    height: 30rem;
+  }
