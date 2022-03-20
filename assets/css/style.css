@@ -348,8 +348,23 @@ footer p {
     width: 53.3rem;
     height: 30rem;
   }
+  
+/*contact us page*/
 
 .contact_body {
     background: url("/assets/images/poster_big.webp") center center fixed;
     background-size: cover;
+  }
+
+  .contact_content_container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .map_contact iframe {
+    width: 36rem;
+    height: 25rem;
+    border-radius: 6px;
   }
