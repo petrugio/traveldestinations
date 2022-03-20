@@ -15,6 +15,11 @@ body {
 
 /*logo*/
 
+#logo {
+    width: 9rem;
+    height: 9rem;
+  }
+
 /*nav menu - adapted for this project from..*/
 /*https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/*/
 
@@ -137,9 +142,15 @@ body {
     border-top-color: rgb(230, 204, 204);
   }
 
-#logo {
-    width: 9rem;
-    height: 9rem;
+/*header*/
+
+header {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
 /*hero video*/
