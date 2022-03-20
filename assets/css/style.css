@@ -11,13 +11,14 @@
 body {
     font-family: Capriola;
     font-weight: 300;
-    color: #3a3a3a;
 }   
 
+/*logo*/
+
 #logo {
-    width: 10vh;
-    margin-left: 0.5rem;
-}
+    width: 9rem;
+    height: 9rem;
+  }
 
 
 /*footer*/
