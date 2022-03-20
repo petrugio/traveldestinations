@@ -348,3 +348,8 @@ footer p {
     width: 53.3rem;
     height: 30rem;
   }
+
+.contact_body {
+    background: url("/assets/images/poster_big.webp") center center fixed;
+    background-size: cover;
+  }
