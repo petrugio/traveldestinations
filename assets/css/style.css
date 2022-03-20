@@ -187,6 +187,29 @@ header {
   color: rgb(0, 0, 0);
 }
 
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .contact_details li,
+  .contact_details_adr li {
+    padding: 0.9%;
+  }
+  
+  .contact_details i,
+  .contact_details_adr i {
+    padding-right: 2%;
+    color: #fff;
+  }
+  
+  .contact_details li:hover,
+  .contact_details_adr li:hover {
+    transform: scale(1.03);
+  }
+
 /*hero video*/
 
 .video-container {
