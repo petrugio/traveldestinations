@@ -473,3 +473,29 @@ label,
       margin: 0;
     }
   }
+
+  @media (max-width: 750px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .main_description p {
+      text-align: justify;
+    }
+    .video-container {
+      height: 185vh;
+    }
+    .countries_container {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-template-rows: 30% 30% 30%;
+    }
+    iframe {
+      width: 25rem;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+  }
