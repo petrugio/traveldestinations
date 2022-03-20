@@ -164,6 +164,12 @@ header {
     background-color: rgb(99, 116, 192, 0.85);
   }
   
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(62, 90, 214);
+    padding: 0.5rem;
+  }
 
 /*hero video*/
 
