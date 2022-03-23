@@ -365,6 +365,7 @@ iframe {
   justify-content: space-around;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 110px;
 }
 
 .map_contact iframe {
