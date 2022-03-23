@@ -463,6 +463,7 @@ label,
     column-gap: 2rem;
     row-gap: 2rem;
     margin-bottom: 2rem;
+    padding-top: 10%;
   }
 
   .video-container {
