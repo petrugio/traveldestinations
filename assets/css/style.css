@@ -434,6 +434,27 @@ label,
 
 /*responsive design*/
 
+@media (min-width: 2000px) {
+  footer {
+    height: 180px;
+  }
+  .content_container {
+    height: 40vh;
+  }
+  .contact_details {
+    padding-bottom: 5%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .countries_page_container {
+    padding-top: 8%;
+  }
+}
+
 @media (max-width: 1400px) {
   .countries_container {
     display: grid;
