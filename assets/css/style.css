@@ -295,6 +295,9 @@ img:hover {
 
 footer {
   background-color: rgb(99, 116, 192);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .social-networks {
