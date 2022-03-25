@@ -346,7 +346,7 @@ footer p {
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .countries_page img {
@@ -533,6 +533,16 @@ label,
     width: 25rem;
     padding-top: 4rem;
     padding-bottom: 2rem;
+  }
+
+  footer {
+    height: 90px;
+  }
+
+  .content_container,
+  .countries_page_container,
+  .contact_content_container {
+    margin-bottom: 90px;
   }
 }
 
