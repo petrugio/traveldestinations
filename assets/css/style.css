@@ -469,11 +469,6 @@ label,
     column-gap: 2rem;
     row-gap: 2rem;
     margin-bottom: 2rem;
-    padding-top: 10%;
-  }
-
-  .video-container {
-    height: 160vh;
   }
 
   .countries_page_container {
@@ -526,10 +521,6 @@ label,
 
   .main_description p {
     text-align: justify;
-  }
-
-  .video-container {
-    height: 185vh;
   }
 
   .countries_container {
