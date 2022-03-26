@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<!-- Head section -->
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,11 +16,30 @@
   <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png" />
 </head>
 
-<body class="contact_body">
+<!-- Body section -->
+
+<body>
+  <!-- Hero video -->
+
+  <div class="video-container">
+    <video class="fullscreen-video" poster="/assets/images/poster_big.webp" loop muted autoplay>
+      <source src="assets/images/hero_1080.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Header section -->
+
   <header>
+
+    <!-- Logo  -->
+
     <a href="index.html">
       <img id="logo" src="assets/images/logo_new.webp" alt="Travel Destinations company logo" />
     </a>
+
+    <!--Nav menu - adapted for this project from: 
+        https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/ -->
+
     <nav aria-label="Main Navigation">
       <ul>
         <li>
@@ -55,94 +76,109 @@
       </ul>
     </nav>
   </header>
-  <h1>Contact us</h1>
 
-  <div class="contact_content_container">
-    <div class="map_contact">
-      <iframe title="Travel destinations Ashbourne" class="map_iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5028372625206!2d-6.401335384063575!3d53.51307596991046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867158a645d3da5%3A0x1d62aee185534ebb!2straveldestinations!5e0!3m2!1sen!2sie!4v1647535872883!5m2!1sen!2sie"
-        style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-      <div class="contact_details_adr">
-        <ul>
-          <li>
-            <a href="mailto:contact@traveldestinations.info"
-              aria-label="Click here to send an email to Travel Destinations (opens in mail app)"><i
-                class="fa-solid fa-envelope"></i>Email:
-              contact@traveldestinations.info</a>
-          </li>
-          <li>
-            <a href="tel:(01)1234567" aria-label="Click here to call Travel Destinations (opens in phone app)"><i
-                class="fas fa-phone"></i>Tel: (01) 1234567
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com/maps/place/Traveldestinations/@53.513073,-6.399147,16z/data=!4m5!3m4!1s0x0:0x1d62aee185534ebb!8m2!3d53.5130728!4d-6.3991467?hl=en"
-              aria-label="Click here to find us (opens in maps app)" target="_blank"><i
-                class="fa-solid fa-map-location-dot"></i>5 Frederick St,
-              Milltown, Ashbourne, Co. Meath</a>
-          </li>
-        </ul>
+  <!-- Main content -->
+  <main>
+    <h1>Contact us</h1>
+    <div class="contact_content_container">
+
+      <!-- Embeded map section -->
+
+      <div class="map_contact">
+        <iframe title="Travel destinations Ashbourne" class="map_iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5028372625206!2d-6.401335384063575!3d53.51307596991046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867158a645d3da5%3A0x1d62aee185534ebb!2straveldestinations!5e0!3m2!1sen!2sie!4v1647535872883!5m2!1sen!2sie"
+          style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+
+        <!-- Contact details section -->
+
+        <div class="contact_details_adr">
+          <ul>
+            <li>
+              <a href="mailto:contact@traveldestinations.info"
+                aria-label="Click here to send an email to Travel Destinations (opens in mail app)"><i
+                  class="fa-solid fa-envelope"></i>Email:
+                contact@traveldestinations.info</a>
+            </li>
+            <li>
+              <a href="tel:(01)1234567" aria-label="Click here to call Travel Destinations (opens in phone app)"><i
+                  class="fas fa-phone"></i>Tel: (01) 1234567
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/Traveldestinations/@53.513073,-6.399147,16z/data=!4m5!3m4!1s0x0:0x1d62aee185534ebb!8m2!3d53.5130728!4d-6.3991467?hl=en"
+                aria-label="Click here to find us (opens in maps app)" target="_blank"><i
+                  class="fa-solid fa-map-location-dot"></i>5 Frederick St,
+                Milltown, Ashbourne, Co. Meath</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Form section -->
+
+      <div class="form_container">
+        <form method="GET" action="thanks.html" class="signup_form">
+          <h2>
+            Tell us where you want to go!<i class="fa-solid fa-umbrella-beach"></i>
+          </h2>
+          <label for="fname">First Name:</label><br />
+          <input placeholder="Enter your first name" class="text-input" id="fname" name="first_name" type="text"
+            required /><br />
+
+          <label for="lname">Last Name:</label><br />
+          <input placeholder="Enter your last name" class="text-input" id="lname" name="last_name" type="text"
+            required /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input placeholder="Enter your email" class="text-input" type="email" id="email" name="email_address"
+            required /><br />
+          <fieldset>
+            <legend>
+              Destination of interest (you can choose more than one):
+            </legend>
+            <label><input name="prefer" value="italy" type="checkbox" class="input_checkbox" />Italy</label><br />
+            <label><input name="prefer" value="spain" type="checkbox" class="input_checkbox" />Spain</label><br />
+            <label><input name="prefer" value="portugal" type="checkbox" class="input_checkbox" />Portugal</label><br />
+            <label><input name="prefer" value="greece" type="checkbox" class="input_checkbox" />Greece</label><br />
+            <label><input name="prefer" value="turkey" type="checkbox" class="input_checkbox" />Turkey</label><br />
+            <label><input name="prefer" value="croatia" type="checkbox" class="input_checkbox" />Croatia</label>
+          </fieldset>
+          <br />
+          <label for="message">Send us a message:</label>
+          <br />
+          <textarea placeholder="Please enter your queries here" id="message" name="message"></textarea><br />
+          <input class="join-button" type="submit" value="Send" />
+        </form>
       </div>
     </div>
-    <div class="form_container">
-      <form method="GET" action="thanks.html" class="signup_form">
-        <h2>
-          Tell us where you want to go!<i class="fa-solid fa-umbrella-beach"></i>
-        </h2>
-        <label for="fname">First Name:</label><br />
-        <input placeholder="Enter your first name" class="text-input" id="fname" name="first_name" type="text"
-          required /><br />
 
-        <label for="lname">Last Name:</label><br />
-        <input placeholder="Enter your last name" class="text-input" id="lname" name="last_name" type="text"
-          required /><br />
+    <!-- Footer section -->
 
-        <label for="email">Email Address:</label><br />
-        <input placeholder="Enter your email" class="text-input" type="email" id="email" name="email_address"
-          required /><br />
-        <fieldset>
-          <legend>
-            Destination of interest (you can choose more than one):
-          </legend>
-          <label><input name="prefer" value="italy" type="checkbox" class="input_checkbox" />Italy</label><br />
-          <label><input name="prefer" value="spain" type="checkbox" class="input_checkbox" />Spain</label><br />
-          <label><input name="prefer" value="portugal" type="checkbox" class="input_checkbox" />Portugal</label><br />
-          <label><input name="prefer" value="greece" type="checkbox" class="input_checkbox" />Greece</label><br />
-          <label><input name="prefer" value="turkey" type="checkbox" class="input_checkbox" />Turkey</label><br />
-          <label><input name="prefer" value="croatia" type="checkbox" class="input_checkbox" />Croatia</label>
-        </fieldset>
-        <br />
-        <label for="message">Send us a message:</label>
-        <br />
-        <textarea placeholder="Please enter your queries here" id="message" name="message"></textarea><br />
-        <input class="join-button" type="submit" value="Send" />
-      </form>
-    </div>
-  </div>
-  <footer class="contact_footer">
-    <ul class="social-networks">
-      <li>
-        <a href="https://www.facebook.com" aria-label="Go to our facebook page (opens in new tab)" target="_blank"><i
-            class="fab fa-facebook"></i></a>
-      </li>
-      <li>
-        <a href="https://www.twitter.com " aria-label="Go to our twitter page (opens in new tab)" target="_blank"><i
-            class="fab fa-twitter-square"></i></a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com" aria-label="Go to our youtube page (opens in new tab)" target="_blank"><i
-            class="fab fa-youtube"></i></a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)" target="_blank"><i
-            class="fab fa-instagram"></i></a>
-      </li>
-    </ul>
-    <p>
-      *This site is for educational purposes only, all images and videos
-      remain the property of the owners.
-    </p>
-  </footer>
+    <footer class="contact_footer">
+      <ul class="social-networks">
+        <li>
+          <a href="https://www.facebook.com" aria-label="Go to our facebook page (opens in new tab)" target="_blank"><i
+              class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com " aria-label="Go to our twitter page (opens in new tab)" target="_blank"><i
+              class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com" aria-label="Go to our youtube page (opens in new tab)" target="_blank"><i
+              class="fab fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)"
+            target="_blank"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p>
+        *This site is for educational purposes only, all images and videos
+        remain the property of the owners.
+      </p>
+    </footer>
+  </main>
   <script src="https://kit.fontawesome.com/add0cc32e5.js" crossorigin="anonymous"></script>
 </body>
 

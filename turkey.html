@@ -1,178 +1,134 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Travel agency. Offering tour packages for individuals or groups."
-    />
-    <meta
-      name="keywords"
-      content="holiday, travel, best value, package holidays, book cheap holidays"
-    />
 
-    <title>Travel Destinations</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/images/favicon/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="assets/images/favicon/apple-touch-icon.png"
-    />
-  </head>
+<!-- Head section -->
 
-  <body>
-    <div class="video-container">
-      <video
-        class="fullscreen-video"
-        poster="assets/images/poster_big.webp"
-        loop
-        muted
-        autoplay
-      >
-        <source src="assets/images/hero_1080.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <header>
-      <a href="index.html">
-        <img
-          id="logo"
-          src="assets/images/logo_new.webp"
-          alt="Travel Destinations company logo"
-        />
-      </a>
-      <nav aria-label="Main Navigation">
-        <ul>
-          <li>
-            <a href="index.html" aria-label="Click here to open Homepage"
-              >Home</a
-            >
-          </li>
-          <li class="dropdown">
-            <button
-              type="button"
-              class="dropdown__title"
-              aria-label="Destinations"
-            >
-              Destinations
-            </button>
-            <ul class="dropdown__menu">
-              <li>
-                <a href="italy.html" aria-label="Click here to open Italy page"
-                  >Italy</a
-                >
-              </li>
-              <li>
-                <a href="spain.html" aria-label="Click here to open Spain page"
-                  >Spain</a
-                >
-              </li>
-              <li>
-                <a
-                  href="portugal.html"
-                  aria-label="Click here to open Portugal page"
-                  >Portugal</a
-                >
-              </li>
-              <li>
-                <a
-                  href="greece.html"
-                  aria-label="Click here to open Greece page"
-                  >Greece</a
-                >
-              </li>
-              <li>
-                <a
-                  href="turkey.html"
-                  aria-label="Click here to open Turkey page"
-                  >Turkey</a
-                >
-              </li>
-              <li>
-                <a
-                  href="croatia.html"
-                  aria-label="Click here to open Croatia page"
-                  >Croatia</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              aria-label="Click here to open Contact us page"
-              >Contact us</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel agency. Offering tour packages for individuals or groups." />
+  <meta name="keywords" content="holiday, travel, best value, package holidays, book cheap holidays" />
+
+  <title>Travel Destinations</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png" />
+</head>
+
+<!-- Body section -->
+
+<body>
+
+  <!-- Hero video -->
+
+  <div class="video-container">
+    <video class="fullscreen-video" poster="/assets/images/poster_big.webp" loop muted autoplay>
+      <source src="assets/images/hero_1080.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Header section -->
+
+  <header>
+
+    <!-- Logo  -->
+
+    <a href="index.html">
+      <img id="logo" src="assets/images/logo_new.webp" alt="Travel Destinations company logo" />
+    </a>
+
+    <!--Nav menu - adapted for this project from: 
+        https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/ -->
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li>
+          <a href="index.html" aria-label="Click here to open Homepage">Home</a>
+        </li>
+        <li class="dropdown">
+          <button type="button" class="dropdown__title" aria-label="Destinations">
+            Destinations
+          </button>
+          <ul class="dropdown__menu">
+            <li>
+              <a href="italy.html" aria-label="Click here to open Italy page">Italy</a>
+            </li>
+            <li>
+              <a href="spain.html" aria-label="Click here to open Spain page">Spain</a>
+            </li>
+            <li>
+              <a href="portugal.html" aria-label="Click here to open Portugal page">Portugal</a>
+            </li>
+            <li>
+              <a href="greece.html" aria-label="Click here to open Greece page">Greece</a>
+            </li>
+            <li>
+              <a href="turkey.html" aria-label="Click here to open Turkey page">Turkey</a>
+            </li>
+            <li>
+              <a href="croatia.html" aria-label="Click here to open Croatia page">Croatia</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="contact.html" aria-label="Click here to open Contact us page">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+
+  <main>
+
+    <!-- Description -->
+
     <h1>Turkey</h1>
     <div class="country_description">
       <p>
         From the ancient port city of Ephesus (Efes) to the soaring Byzantine
         dome of Aya Sofya, Turkey has more than its fair share of world-famous
         ruins and monuments. A succession of historical figures and empires –
-        including the Romans, Byzantines and Ottomans – have all left their mark
-        on this former stopover along the Silk Road. Experiencing their legacy
-        takes you from the closeted quarters of the sultan and his harem in
-        İstanbul's sprawling Topkapı Palace to the romantic and mysterious
-        Lycian ruins on Mediterranean beaches.
+        including the Romans, Byzantines and Ottomans – have all left their
+        mark on this former stopover along the Silk Road. Experiencing their
+        legacy takes you from the closeted quarters of the sultan and his
+        harem in İstanbul's sprawling Topkapı Palace to the romantic and
+        mysterious Lycian ruins on Mediterranean beaches.
       </p>
     </div>
+
+    <!-- Coutries container -->
+
     <div class="countries_page_container">
       <div class="countries_page">
-        <img
-          src="assets/images/turkey_big.webp"
-          alt="Holiday houses on coastline"
-        />
+        <img src="assets/images/turkey_big.webp" alt="Holiday houses on coastline" />
       </div>
       <div class="iframe-container">
-        <iframe
-          aria-label="10 Best places to visit in Turkey"
-          src="https://www.youtube.com/embed/r8rZQKXijb8?&theme=dark&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0"
-          frameborder="0"
-        ></iframe>
+        <iframe aria-label="10 Best places to visit in Turkey"
+          src="https://www.youtube.com/embed/r8rZQKXijb8?&theme=dark&autohide=2&cc_load_policy=1&modestbranding=1&showinfo=0&rel=0"></iframe>
       </div>
     </div>
+
+    <!-- Footer section -->
+
     <footer>
       <ul class="social-networks">
         <li>
-          <a
-            href="https://www.facebook.com"
-            aria-label="Go to our facebook page (opens in new tab)"
-            target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
+          <a href="https://www.facebook.com" aria-label="Go to our facebook page (opens in new tab)" target="_blank"><i
+              class="fab fa-facebook"></i></a>
         </li>
         <li>
-          <a
-            href="https://www.twitter.com "
-            aria-label="Go to our twitter page (opens in new tab)"
-            target="_blank"
-            ><i class="fab fa-twitter-square"></i
-          ></a>
+          <a href="https://www.twitter.com " aria-label="Go to our twitter page (opens in new tab)" target="_blank"><i
+              class="fab fa-twitter-square"></i></a>
         </li>
         <li>
-          <a
-            href="https://www.youtube.com"
-            aria-label="Go to our youtube page (opens in new tab)"
-            target="_blank"
-            ><i class="fab fa-youtube"></i
-          ></a>
+          <a href="https://www.youtube.com" aria-label="Go to our youtube page (opens in new tab)" target="_blank"><i
+              class="fab fa-youtube"></i></a>
         </li>
         <li>
-          <a
-            href="https://www.instagram.com"
-            aria-label="Go to our instagram page (opens in new tab)"
-            target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
+          <a href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)"
+            target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
       </ul>
       <p>
@@ -180,10 +136,8 @@
         remain the property of the owners.
       </p>
     </footer>
+  </main>
+  <script src="https://kit.fontawesome.com/add0cc32e5.js" crossorigin="anonymous"></script>
+</body>
 
-    <script
-      src="https://kit.fontawesome.com/add0cc32e5.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
