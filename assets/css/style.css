@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
 
-/*generic*/
+/*Generic*/
 
 * {
   margin: 0;
@@ -13,14 +13,14 @@ body {
   font-weight: 300;
 }
 
-/*logo*/
+/*Logo*/
 
 #logo {
   width: 9rem;
   height: 9rem;
 }
 
-/*nav menu - adapted for this project from..*/
+/*Nav menu - adapted for this project from..*/
 /*https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/*/
 
 .dropdown__title {
@@ -59,13 +59,13 @@ nav {
   opacity: 1;
 }
 
-nav>ul {
+nav > ul {
   grid-auto-flow: column;
   white-space: nowrap;
 }
 
-nav>ul>li a,
-nav>ul>li .dropdown__title {
+nav > ul > li a,
+nav > ul > li .dropdown__title {
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -73,17 +73,17 @@ nav>ul>li .dropdown__title {
   font-size: 1rem;
 }
 
-nav>ul>li>a,
-nav>ul>li .dropdown__title {
+nav > ul > li > a,
+nav > ul > li .dropdown__title {
   padding: 0.5rem 0.5rem;
   border-top: 3px solid transparent;
   transition: 50ms all 50ms ease-out;
 }
 
-nav>ul>li>a:hover,
-nav>ul>li .dropdown__title:hover,
-nav>ul>li>a:focus,
-nav>ul>li .dropdown__title:focus {
+nav > ul > li > a:hover,
+nav > ul > li .dropdown__title:hover,
+nav > ul > li > a:focus,
+nav > ul > li .dropdown__title:focus {
   border-top-color: rgb(230, 204, 204);
   color: rgb(230, 204, 204);
 }
@@ -153,7 +153,7 @@ nav ul {
   border-top-color: rgb(230, 204, 204);
 }
 
-/*header*/
+/*Header*/
 
 header {
   display: flex;
@@ -164,9 +164,10 @@ header {
   padding-right: 1rem;
 }
 
-/*welcome text and contact*/
+/*Welcome text and contact*/
 
-.main_description p {
+.main_description p,
+h3 {
   font-size: 1.3rem;
   text-align: center;
   line-height: 1.5;
@@ -203,6 +204,7 @@ h1 {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  padding-bottom: 1%;
 }
 
 .contact_details li,
@@ -221,7 +223,7 @@ h1 {
   transform: scale(1.03);
 }
 
-/*hero video*/
+/*Hero video*/
 
 .video-container {
   position: fixed;
@@ -241,7 +243,7 @@ video {
   height: 100%;
 }
 
-/*main content*/
+/*Main content*/
 
 .content_container {
   display: flex;
@@ -250,7 +252,7 @@ video {
   margin-bottom: 120px;
 }
 
-/*countries*/
+/*Countries*/
 
 .countries_container {
   display: grid;
@@ -296,7 +298,7 @@ img:hover {
   transform: scale(1.05);
 }
 
-/*footer*/
+/*Footer*/
 
 footer {
   background-color: rgb(99, 116, 192);
@@ -310,7 +312,7 @@ footer {
   text-align: center;
 }
 
-.social-networks>li {
+.social-networks > li {
   display: inline;
 }
 
@@ -332,7 +334,7 @@ footer p {
   text-align: center;
 }
 
-/*countries pages*/
+/*Countries pages*/
 
 .country_description {
   padding: 2rem;
@@ -359,7 +361,7 @@ iframe {
   height: 30rem;
 }
 
-/*contact us page*/
+/*Contact us page*/
 
 .contact_body {
   background: url("../images/poster_big.webp") center center fixed;
@@ -380,7 +382,7 @@ iframe {
   border-radius: 6px;
 }
 
-/*contact form*/
+/*Contact form*/
 
 .form_container {
   background-color: rgb(99, 116, 192, 0.9);
@@ -438,14 +440,31 @@ label,
   transform: scale(1.05);
 }
 
-/*responsive design*/
+/*404 page*/
+
+.four_o_four {
+  background: url("../images/404.webp") center center fixed;
+  background-size: cover;
+}
+
+h3 {
+  margin-top: 15rem;
+}
+
+h3 > a {
+  text-decoration: none;
+  color: rgb(230, 204, 204);
+}
+
+/*Responsive design*/
 
 @media (min-width: 2000px) {
   footer {
-    height: 180px;
+    height: 200px;
   }
   .content_container {
     height: 40vh;
+    margin-bottom: 200px;
   }
   .contact_details {
     padding-bottom: 5%;
@@ -457,7 +476,8 @@ label,
     font-size: 2rem;
   }
   .countries_page_container {
-    padding-top: 8%;
+    padding-top: 10rem;
+    margin-bottom: 200px;
   }
 }
 
@@ -602,6 +622,10 @@ label,
     margin-bottom: 100px;
   }
 
+  .countries_page {
+    padding-top: 3rem;
+  }
+
   video {
     display: none;
   }
@@ -624,8 +648,9 @@ label,
   }
 }
 
-/*hero video aspect ratio media query*/
-/*code adapted from..*/
+
+/*Hero video aspect ratio media query*/
+/*Code adapted from..*/
 /*https://fvsch.com/video-background*/
 
 /* 1. No object-fit support: */
