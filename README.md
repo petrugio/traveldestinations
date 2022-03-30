@@ -210,6 +210,7 @@ Sourced from [Google fonts](https://fonts.google.com/).
 <details>
 <summary>Landing page</summary>
 <br>
+This page welcomes and presents to the user Travel Destination website.
 Logo is positioned top left on all pages including home page and has a link to the home page.
 On small tablets and smartphones, logo and Nav menu are stacked on top of each other.
 The menu bar features in the top right corner, this is a modern and intuitive design.
@@ -219,6 +220,12 @@ The background is a video that is responsive to different screen sizes.
 * Desktop
 
 ![Landing page](documentation/features/homepage.jpg)
+ 
+* Tablet
+
+![Landing page](documentation/features/responsive/homepage_tablet.png)
+![Landing page](documentation/features/responsive/homepage_down.png)
+![Landing page](documentation/features/responsive/homepage_portrait.png)
 
 * Mobile
 
@@ -229,21 +236,48 @@ The background is a video that is responsive to different screen sizes.
 <details>
 <summary>Navigational Menu</summary>
 <br>
+Navigational Menu is very intuitive to the user.
 Included on all internal pages at the top right of the page. Allows access to internal links.
-On hover above Destinations in Nav menu: a drop-down menu with countries links appears.
+On desktop on hover above Destinations in Nav menu: a drop-down menu with countries links appears.
+On mobile the user has to touch Destinations in order for drop-down menu to appear.
 Since there are 6 countries with individual pages, putting all links in the Nav menu without the Destinations drop-down would have cluttered the Nav menu, hence the decision for drop-down menu.
 
+* Desktop
+
 ![Navigational Menu](documentation/features/menu.jpg)
+
+* Mobile
+
+![Navigational Menu](documentation/features/responsive/menu.jpg)
 
 <br>
 </details>
 
 <details>
+<summary>Favicon</summary>
+A Favicon was added to the website. It is the image of a palm tree - a part of the logo and more commonly associated with holidays or travel. It provides the user information about open tab; if user has multiple tabs opened then the user can easily find his/her way back.
+<br>
+
+![Navigational Menu](documentation/features/favicon.jpg)
+
+</details>
+
+<details>
 <summary>Countries Section</summary>
 <br>
-Provides link to individual countries pages from homepage in addition to Nav menu. It is available only on the homepage.
+Provides to the user link to individual countries pages from homepage in addition to Nav menu. It is available only on the homepage.
+
+* Desktop
 
 ![Countries Section](documentation/features/countries.jpg)
+
+* Tablet
+
+![Countries Section](documentation/features/responsive/homepage_down.png)
+
+* Mobile
+
+![Countries Section](documentation/features/responsive/home.jpg)
 
 <br>
 </details>
@@ -256,7 +290,17 @@ Provides link to individual countries pages from homepage in addition to Nav men
 Footer is available on Homepage, countries pages and contact us page.
 Allows the user to see available links to other Travel Destinations social media sites and copyright info.
 
+* Desktop
+
 ![Fixed footer](documentation/features/footer.jpg)
+
+* Tablet
+
+![Fixed footer](documentation/features/responsive/homepage_down.png)
+
+* Mobile
+
+![Fixed footer](documentation/features/responsive/home.jpg)
 
 Includes:
 
@@ -274,7 +318,7 @@ Includes:
 <details>
 <summary>Countries Pages</summary>
 <br>
-There are 6 individual countries with an image and an embedded video of top 10 places to visit in that country as follows:
+There are 6 individual countries with a short description of that country, image and an embedded video of top 10 places the user can visit in that country as follows:
 
 <br>
 
@@ -304,6 +348,15 @@ There are 6 individual countries with an image and an embedded video of top 10 p
 
 ![Croatia-Page](documentation/features/croatia.jpg)
 
+
+* Tablet
+
+![Countries page](documentation/features/responsive/italy.png)
+
+* Mobile
+
+![Countries page](documentation/features/responsive/italy.jpg)
+
 <br>
 </details>
 
@@ -312,7 +365,13 @@ There are 6 individual countries with an image and an embedded video of top 10 p
 <br>
 Video controls and subtitles are turned on by default, to provide the user with the best experience.
 
+* Desktop
+
 ![Subtitles](documentation/features/subtitles.jpg)
+
+* Tablet
+
+![Subtitles](documentation/features/responsive/greece.png)
 
 <br>
 </details>
@@ -320,9 +379,22 @@ Video controls and subtitles are turned on by default, to provide the user with 
 <details>
 <summary>Contact us page</summary>
 <br>
-This page has all the relevant information to find and get in contact with Travel Destinations.
+This page provides all the relevant information to the user in order to get in contact with Travel Destinations.  
+
+* Desktop
 
 ![Contact](documentation/features/contact.jpg)
+
+* Tablet
+
+![Contact](documentation/features/responsive/contact.png)
+![Contact](documentation/features/responsive/address.png)
+
+* Mobile
+
+![Contact](documentation/features/responsive/map.jpg)
+![Contact](documentation/features/responsive/form.jpg)
+
 
 Includes:
 
@@ -342,6 +414,11 @@ Includes:
      * When address is pressed - it opens google maps in a new tab with the destination selected.
 
 ![Contact details](documentation/features/address.jpg)
+
+* Mobile
+
+![Contact](documentation/features/responsive/mail.jpg)
+![Contact](documentation/features/responsive/phone.jpg)
 
 **3.Contact form**
 
