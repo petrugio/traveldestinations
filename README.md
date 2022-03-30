@@ -25,11 +25,11 @@ View the live project
         * [HTML5](#html5)
         * [CSS3](#css3)
         * [Lighthouse](#lighthouse)
+        * [WebAIM](#webaim)
     * [Browser Testing](#browser-testing)
-* [Bugs](#tasks)
+* [Bugs](#bugs)
     * [Fixed Bugs](#fixed-bugs)
     * [Unfixed Bugs](#unfixed-bugs)
-* [Tasks](#tasks)
 * [Deployment](#deployment)
     * [Version Control](#version-control)
     * [GitHub Pages](#github-pages)
@@ -239,11 +239,11 @@ Since there are 6 countries with individual pages, putting all links in the Nav 
 </details>
 
 <details>
-<summary>Countries Button</summary>
+<summary>Countries Section</summary>
 <br>
 Provides link to individual countries pages from homepage in addition to Nav menu. It is available only on the homepage.
 
-![Countries Button](documentation/features/countries.jpg)
+![Countries Section](documentation/features/countries.jpg)
 
 <br>
 </details>
@@ -266,7 +266,7 @@ Includes:
     - YouTube.
     - Instagram.
     
- Also includes copyright info. Since i embedded 3rd party videos from YouTube, it is important to let the users know that the video rights belongs to the owner.
+ Also includes copyright info. Since I embedded 3rd party videos from YouTube, it is important to let the users know that the video rights belongs to the owner.
     
 </details>
 
@@ -362,7 +362,7 @@ After the user submits a message through the dummy form to Travel Destinations o
 
 * It gives the user a response saying thank you for your message.
  
-![Thanks](documentation/features/thanks.jpg)
+![Form](documentation/features/thanks.jpg)
 
 <br>
 </details>
@@ -429,7 +429,12 @@ Testing was performed to ensure all navigation links on the respective pages, na
 
 ## Responsive Design
 
-I was able to make the website responsive by using a variety of methods. The screen sizes, which I implemented, allow the site to adapt to various user screens, starting from 320px and up to 1080p (1920x1080px). 
+I was able to make the website responsive by using a combitation of CSS display:
+  - Grid
+  - Flexbox
+  - Inline
+
+ The screen sizes, which I implemented, allow the site to adapt to various user screens, starting from 320px and up to 1080p (1920x1080px). 
 
 [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) was the tool I used to make the site responsive.
 
@@ -499,8 +504,6 @@ All the pages were tested with [Chrome Developer Tools](https://developer.chrome
 
 - Accessibility: 
     
-    - All pages were tested with Wave Chrome extension to check web accessibility.
-
     - Footer color and background transparency  was changed for all pages for better contrast.
 
     - Missing fieldset and legend for checkboxes added.
@@ -519,9 +522,8 @@ All the pages were tested with [Chrome Developer Tools](https://developer.chrome
 
     - Alt attributes added to all images.
 
-    - Meta data descriptions added to each internal page created.
-
-
+    - Meta-data descriptions added to each internal page created.
+    
 <details>
 <summary>Screenshots</summary>
 <br>
@@ -538,6 +540,35 @@ All the pages were tested with [Chrome Developer Tools](https://developer.chrome
 ![404](documentation/testing/lighthouse/404.jpg)
 
 </details>
+    
+
+### WebAIM 
+  
+   - All pages were tested with Wave Chrome extension to check web accessibility.   
+   Wave does not show any error. It shows only 3 advisory warnings.  
+   
+       A issues was found during testing:
+      -  Extension showed that Embedded Youtube video should have captions.  
+      -  I fix it by having captions shown by default as shown in 
+      [Existing Features](#existing-features).
+  
+  <details>
+<summary>Alert Screenshot</summary>
+<br>
+
+  ![Youtube](documentation/testing/wave/youtube.jpg)  
+  </details>
+  
+<details>
+<summary>Screenshots</summary>
+<br>
+
+![homepage](documentation/testing/wave/homepage.jpg)
+![italy](documentation/testing/wave/italy.jpg)
+![contact](documentation/testing/wave/contact.jpg)
+
+</details>
+
 
 ## Browser Testing 
 - Page behaves as expected in all browsers tested. The website was tested in [Chrome](https://www.google.com/intl/en_ie/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/new/),
@@ -551,7 +582,7 @@ All the pages were tested with [Chrome Developer Tools](https://developer.chrome
 
 ## Fixed Bugs
 
-The only major issue encountered was making the site responsive. I did not fully understand viewport height as a unit of measurement when I began building the project and it led to wasting a lot of time in trying to make background video responsive and to properly interact with other elements on the page.  
+The only major issue encountered was making the site responsive. I did not fully understand viewport height as a unit of measurement when I began building the project, and it led to wasting a lot of time in trying to make background video responsive and to properly interact with other elements on the page.  
 
 ## Unfixed bugs
 
@@ -573,7 +604,7 @@ I used [GitPod](https://www.gitpod.io/) as a local repository and IDE & [GitHub]
 1. To begin with I used Code Institute [template on GitHub](https://github.com/Code-Institute-Org/gitpod-full-template)
   
 2. Then I used that template to create  [traveldestinations](https://github.com/petrugio/traveldestinations) repository.
-3. Once repository was created i pressed green Gitpod button at the top of the page to create a Gitpod workspace.
+3. Once repository was created I pressed green Gitpod button at the top of the page to create a Gitpod workspace.
 4. I created some files and folders.
 5. To push my newly created files to GitHub I used a Bash terminal:
 
@@ -666,18 +697,18 @@ I borrowed some code from [here](https://fvsch.com/video-background).
 I created the branding logo with  [FreeLogoDesign](https://www.freelogodesign.org/).
 
 ### Icons
-All of the icons were sourced from [Fontawsome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free).
+All the icons were sourced from [Fontawsome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free).
 
 ### Images and video
 All images and video on the website all came from [Pexels](https://www.pexels.com/).
 
 ### YouTube videos
-Embeded videos were taken from [Touropia](https://www.youtube.com/channel/UCh3Rpsdv1fxefE0ZcKBaNcQ) YouTube page.
+Embedded videos were taken from [Touropia](https://www.youtube.com/channel/UCh3Rpsdv1fxefE0ZcKBaNcQ) YouTube page.
 <hr>
 
 # Contact
 
-My name is [Petru Chelban](https://github.com/petrugio) i am a full-stack software developer student at [Code Institute](https://codeinstitute.net/ie/), where I am pursuing Diploma in Full Stack Software Development.
+My name is [Petru Chelban](https://github.com/petrugio) I am a full-stack software developer student at [Code Institute](https://codeinstitute.net/ie/), where I am pursuing Diploma in Full Stack Software Development.
 
 Please do not hesitate to contact me if you require any additional information about this project or wish to discuss work/collaboration opportunities.
 
